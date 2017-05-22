@@ -73,6 +73,7 @@ public class App {
            exists= (json.getString("password")).equals(password);
         }
         catch(NoDocumentException e){
+            exists=false;
             System.out.println("object not exists");
         }
         catch(IOException e){}
